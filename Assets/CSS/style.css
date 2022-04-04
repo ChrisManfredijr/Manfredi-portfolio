@@ -4,6 +4,7 @@
     --color3: #5CDB95;
     --color4: #5CDB95;
     --color5: #EDF5E1;
+    --mainfont: Helvetica, sans-serif;
 
 }
 
@@ -24,6 +25,7 @@ header {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: var(--mainfont);
 
 }
   
@@ -32,12 +34,14 @@ header h1 {
     font-size:42px;
     color:var(--color3);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 
 }
   
 header a {
     text-decoration: none;
     color:var(--color3);
+    
 }
   
 header nav {
@@ -64,3 +68,45 @@ header nav ul li a:hover {
 }
   
 /*header and nav end*/
+
+/* about me class start */
+.about-me {
+    display: flex;
+    flex-wrap:wrap;
+    font-family: var(--mainfont);
+    color: var(--color1);
+    margin:50px;  
+}
+
+.my-image {
+    margin:20px;
+}
+
+.write-up {
+    flex:1 0 50%;
+    margin:20px;
+    align-content: center;
+}
+
+.write-up h2 {
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.write-up p {
+    font-size: 20px;
+    color: var(--color1);
+}
+/*about-me end*/
+
+
+/*portfolio */
+.my-portfolio {
+    background-color: var(--color2);
+}
+.resume {
+    background-color: var(--color5);
+}
+.contact-me{
+    background-color: var(--color1);
+}
