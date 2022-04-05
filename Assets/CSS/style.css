@@ -128,7 +128,7 @@ header nav ul li a:hover {
     font-weight: bold;
     font-style:italic;
     text-shadow: 2px 0 0px var(--color1);    
-    font-size: 2.5vw;
+    font-size: 2.6vw;
     padding:0px 50px 0px 50px;  
     flex:1 0 30%;
     
@@ -325,10 +325,12 @@ header nav ul li a:hover {
     
     header {
         justify-content: center;
+        
     }
     h1 {
         flex:0 100%;
         text-align:center;
+        
     }
 
 
@@ -336,6 +338,7 @@ header nav ul li a:hover {
         font-size:20px;
         top:10%;
         padding:10px 10px;
+        
     }
 
     .project-main h3 {
@@ -361,6 +364,7 @@ header nav ul li a:hover {
         flex: 0 100%;
         margin: 0px 175px 50px 175px;
         border-bottom: 5px solid var(--color2);
+        font-size:30px;
     }
 
   
@@ -368,8 +372,11 @@ header nav ul li a:hover {
       justify-content: center;
       margin: 0px 175px 50px 175px;
       border-bottom: 5px solid var(--color2);
+      
   }
-
+  .portfolio-intro h2 {
+        font-size: 50px;
+  }
   .projects {
       border-left: none;
   }
