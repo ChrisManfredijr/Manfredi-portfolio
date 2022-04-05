@@ -1,9 +1,9 @@
 :root {
-    --color1: #05386B;
-    --color2: #379683;
-    --color3: #5CDB95;
-    --color4: #5CDB95;
-    --color5: #EDF5E1;
+    --color1: #17252A;
+    --color2: #2B7A78;
+    --color3: #3AAFA9;
+    --color4: #DEF2F1;
+    --color5: #FEFFFF;
     --mainfont:  oswald, sans-serif;
 
 }
@@ -110,19 +110,25 @@ header nav ul li a:hover {
     flex-wrap:wrap;
     font-family: var(--mainfont);
     color: var(--color1);
-    margin:50px;
+    margin:50px 0 50px 0;
+    
       
 }
 
 .my-image {
-    margin:20px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    flex: 1 0 25%;
+    height:400px;
+    width:300px;
+    
 
 }
 
 .write-up {
-    flex:1 0 50%;
-    margin:20px;
-    padding: 20px;
+    flex:1 0 75%;
+    padding: 50px;
     text-align: left;
     border-left:5px solid var(--color2);
 }
@@ -145,39 +151,66 @@ header nav ul li a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width:70%;
-    background-color: var(--color2);
+    width:100%;
     margin-left: auto;
     margin-right:auto;
     font-family: var(--mainfont);
+    padding-bottom: 50px;
+    
+    
+    
 }
 
 .portfolio-intro {
-    flex: 1 0 100%;
+    display:flex;
+    justify-content: flex-end;
+    flex: 1 0 25%;
+    align-items:center;
     
+}
+
+.projects {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+    border-left:5px solid var(--color2);
+    flex:1 0 75%;
+    
+   
+
 }
 .my-portfolio h2{
     
-    text-align: center;
+    text-align: right;
     color:var(--color5);
     font-weight: bold;
+    font-style:italic;
     text-shadow: 2px 0 0px var(--color1);    
-    font-size: 42px;
-    margin:20px;   
+    font-size: 64px;
+    margin:20px;
+    padding-right:20px;   
 }
 
+.screenshot {
+    opacity: 0.4;
+}
 .project-main {
     flex: 1 0 100%;
-    padding: 10px;
-    height:fit-content;
     position: relative;
+    margin-bottom: 5px;
+    border: 10px solid var(--color1);
+
+    
 }
 
 .project-main img {
     width: 100%;
     height: 100%;
-    opacity: 0.4;
     background-color:black;
+    opacity: .4;
+    z-index: 0;
+    
 }
 
 .project-main h3 {
@@ -188,22 +221,24 @@ header nav ul li a:hover {
     padding-left: 5px;
     font-size:36px;
     color: var(--color5);
+    z-index: 998;
     border-right:5px solid var(--color2);
     border-top-right-radius: 12%;
     border-bottom-right-radius: 12%;
 
 }
 .project {
-    flex: 1 0 33%;
-    padding: 10px;
-    height:fit-content;
+    flex: 1 0 25%;
     position:relative;
+    border: 10px solid var(--color1);
+    margin-right: 5px;
 }
 .project img {
     width:100%;
     height:100%;
-    opacity: 0.4;
     background-color:var(--color5);
+    opacity:.4;
+  
    
 }
 
@@ -213,27 +248,54 @@ header nav ul li a:hover {
     background-color: var(--color1);
     padding: 15px;
     padding-left: 5px;
-    font-size:24px;
+    font-size:20px;
     color: var(--color5);
     border-right:5px solid var(--color2);
     border-top-right-radius: 12%;
     border-bottom-right-radius: 12%;
+    z-index:998;
     
 
 }
 
 .project-main img:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 .project img:hover {
-    opacity:1;
+    opacity: 1;
 }
 /* projects end */
 
-.resume {
-    background-color: var(--color5);
-}
+
 .contact-me{
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--color1);
+    padding: 65px 0;
+    font-family: var(--mainfont);
+    font-size: 30px;
+    color: var(--color5)
+    
 }
+
+.contact-me ul a{
+    text-decoration: none;
+    color: var(--color5)
+}
+
+.contact {
+    display: flex;
+    flex: 1 0 25%;
+    justify-content: center;
+    
+}
+
+.links {
+    flex: 1 0 75%;
+    display:flex;
+    justify-content: space-around;
+    list-style:none;
+    border-left:5px solid var(--color5);
+}
+
