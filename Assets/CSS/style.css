@@ -21,21 +21,21 @@ body {
 /*header and nav*/
 header {
     padding: 20px 20px;
-    background-color: var(--color3);
+    background-color: var(--color1);
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     font-family: var(--mainfont);
     border-bottom: 5px solid var(--color2);
-    text-shadow: 2px 0 0px var(--color2);
+    text-shadow: 2px 0 0px var(--color3);
 
 }
   
 header h1 {
     font-weight: bold;
-    font-size: 60px;
-    color:var(--color1);
+    font-size: 55px;
+    color:var(--color5);
 }
 
 header img{
@@ -45,7 +45,7 @@ header img{
 }
 header a {
     text-decoration: none;
-    color:var(--color1);
+    color:var(--color5);
     
 }
   
@@ -65,11 +65,12 @@ header nav ul li a {
     padding: 20px;
     font-size: 24px;
     font-style:italic;
+    letter-spacing:2px;
     
 }
   
 header nav ul li a:hover {
-    color:var(--color5);
+    color:var(--color3);
 }
   
 /*header and nav end*/
@@ -92,6 +93,8 @@ header nav ul li a:hover {
     font-size: 30px;
     font-weight:bold;
     padding:25px;
+    font-style:italic;
+    word-spacing:5px;
     position:absolute;
     bottom:0;
     right:30px;
@@ -115,19 +118,26 @@ header nav ul li a:hover {
       
 }
 
-.my-image {
-    display: flex;
-    justify-content: center;
-    margin:auto;
-    flex: 1 0 25%;
-    height:400px;
-    width:300px;
+.intro {
+    display:flex;
+    justify-content: flex-end;
+    flex: 1 0 30%;
+    align-items:center;
+    text-align: right;
+    color:var(--color5);
+    font-weight: bold;
+    font-style:italic;
+    text-shadow: 2px 0 0px var(--color1);    
+    font-size: 2.5vw;
+    padding:0px 50px 0px 50px;  
+    flex:1 0 30%;
     
-
+    
+   
 }
 
 .write-up {
-    flex:1 0 75%;
+    flex:1 0 70%;
     padding: 50px;
     text-align: left;
     border-left:5px solid var(--color2);
@@ -164,7 +174,7 @@ header nav ul li a:hover {
 .portfolio-intro {
     display:flex;
     justify-content: flex-end;
-    flex: 1 0 25%;
+    flex: 1 0 30%;
     align-items:center;
     
 }
@@ -173,9 +183,9 @@ header nav ul li a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 100px;
+    padding: 0 100px;
     border-left:5px solid var(--color2);
-    flex:1 0 75%;
+    flex:1 0 70%;
     
    
 
@@ -187,7 +197,7 @@ header nav ul li a:hover {
     font-weight: bold;
     font-style:italic;
     text-shadow: 2px 0 0px var(--color1);    
-    font-size: 64px;
+    font-size: 4vw;
     margin:20px;
     padding-right:20px;   
 }
@@ -275,7 +285,8 @@ header nav ul li a:hover {
     padding: 65px 0;
     font-family: var(--mainfont);
     font-size: 30px;
-    color: var(--color5)
+    color: var(--color5);
+    border-top: 5px solid var(--color2);
     
 }
 
@@ -287,7 +298,10 @@ header nav ul li a:hover {
 .contact {
     display: flex;
     flex: 1 0 25%;
+    font-size: 45px;
     justify-content: center;
+    text-shadow: 2px 0 0px var(--color2);
+
     
 }
 
@@ -296,6 +310,75 @@ header nav ul li a:hover {
     display:flex;
     justify-content: space-around;
     list-style:none;
+    font-style:italic;
+    letter-spacing: 2px;
     border-left:5px solid var(--color5);
+    text-shadow: 2px 0 0px var(--color2);
+
 }
 
+.links a:hover {
+    color:var(--color3);
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    
+    header {
+        justify-content: center;
+    }
+    h1 {
+        flex:0 100%;
+        text-align:center;
+    }
+
+
+    .project h3 {
+        font-size:20px;
+        top:10%;
+        padding:10px 10px;
+    }
+
+    .project-main h3 {
+        font-size:25px;
+    }
+    .contact-me{
+        padding:0;
+    }
+    .contact {
+        flex:1 0 100%;
+         
+    }
+ 
+    .links {
+        padding:25px;
+        border-left: none;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .intro {
+        flex: 0 100%;
+        margin: 0px 175px 50px 175px;
+        border-bottom: 5px solid var(--color2);
+    }
+
+  
+  .portfolio-intro {
+      justify-content: center;
+      margin: 0px 175px 50px 175px;
+      border-bottom: 5px solid var(--color2);
+  }
+
+  .projects {
+      border-left: none;
+  }
+  .intro {
+    justify-content: center;
+  }
+
+}
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+   
+}
