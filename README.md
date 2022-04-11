@@ -3,6 +3,8 @@
 ## purpose
 This portfolio was built to showcase my ability with HTML and CSS
 
+![portfolio website](./assets/images/portfolio-pic.PNG)
+
 ## Website
 https://chrismanfredijr.github.io/Manfredi-portfolio/
 

@@ -118,7 +118,8 @@ header nav ul li a:hover {
       
 }
 
-.intro {
+
+.intro{
     display:flex;
     justify-content: flex-end;
     flex: 1 0 30%;
@@ -130,19 +131,23 @@ header nav ul li a:hover {
     text-shadow: 2px 0 0px var(--color1);    
     font-size: 2.6vw;
     padding:0px 50px 0px 50px;  
-    flex:1 0 30%;
-    
-    
-   
+    flex:1 0 30%;  
 }
+
 
 .write-up {
     flex:1 0 70%;
     padding: 50px;
     text-align: left;
     border-left:5px solid var(--color2);
+    
 }
 
+.write-up img {
+    margin:auto;
+    display: block;
+    padding: 20px;
+}
 .write-up h2 {
     font-style: italic;
     font-size: 50px;
